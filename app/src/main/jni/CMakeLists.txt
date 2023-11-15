@@ -6,8 +6,9 @@ project(FFMPEG_CMD)
 set(CMAKE_CXX_FLAGS "-std=gnu++11 ${CMAKE_CXX_FLAGS}")
 
 # 定义ffmpeg库和头文件目录
-set(ffmpeg_dir /Users/hezhubo/project/github/FFmpeg) #修改路径
-set(ffmpeg_lib_dir ${ffmpeg_dir}/android/${CMAKE_ANDROID_ARCH_ABI}/lib)
+#set(ffmpeg_dir /Users/hezhubo/project/github/FFmpeg) #修改路径
+#set(ffmpeg_lib_dir ${ffmpeg_dir}/android/${CMAKE_ANDROID_ARCH_ABI}/lib)
+set(ffmpeg_lib_dir ${CMAKE_SOURCE_DIR}/libs/${CMAKE_ANDROID_ARCH_ABI})
 set(ffmpeg_head_dir ${CMAKE_SOURCE_DIR}/include)
 
 # 添加ffmpeg库
